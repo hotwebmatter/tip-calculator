@@ -14,9 +14,10 @@ namespace tip_calculator
                          GOOD_TIP = 0.2;
 
             // Compile-time initialization is not specified
+            // so I'll read total bill from user input
             Write("Total bill charge: ");
             billCharge = ReadCharge();
-            WriteLine("{0, 5} {1:C2}", "Bill:", billCharge);
+            WriteLine(CalculateTips(billCharge));
         }
 
         static double ReadCharge()
@@ -30,6 +31,13 @@ namespace tip_calculator
                 userInput = ReadLine();
             }
             return charge;
+        }
+
+        static string CalculateTips(double bill)
+        {
+            string result = String.Format("TIP CALCULATOR\n");
+            result += String.Format("{0, 5} {1:C2}", "Bill:", bill);
+            return result;
         }
     }
 }
