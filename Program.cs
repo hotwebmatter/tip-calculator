@@ -37,7 +37,9 @@ namespace tip_calculator
         static string CalculateTips(double bill)
         {
             string result = String.Format("TIP CALCULATOR\n");
-            result += String.Format("{0, 5} {1:C2}", "Bill:", bill);
+            result += String.Format("{0, 8} {1, 8:C2}\n", "Bill:", bill);
+            result += String.Format("{0, 8} {1, 8:C2}\n", "15% Tip:", bill * LOW_TIP);
+            result += String.Format("{0, 8} {1, 8:C2}\n", "20% Tip:", bill * GOOD_TIP);
             return result;
         }
     }
