@@ -1,5 +1,9 @@
 # Tip Calculator
 
+Seventh programming exercise in Chapter Two.
+
+Does not specify compile-time initialization.
+
 ## Example Output
 ```
 $ dotnet bin/Debug/netcoreapp2.1/tip-calculator.dll
