@@ -5,13 +5,14 @@ namespace tip_calculator
 {
     class Program
     {
+        // class-level constants
+        const double LOW_TIP = 0.15,
+                     GOOD_TIP = 0.2;
         static void Main(string[] args)
         {
             double billCharge,
                    tipCharge,
                    totalCharge;
-            const double LOW_TIP = 0.15,
-                         GOOD_TIP = 0.2;
 
             // Compile-time initialization is not specified
             // so I'll read total bill from user input
